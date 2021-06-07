@@ -1,0 +1,106 @@
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color:#F0FFFF;
+}
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #22577A;
+    height: 60px;
+    padding: 0 40px;
+}
+.nav_link li{
+    display:inline-block;
+}
+li, a {
+    font-size:16px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+header .active {
+    padding: 15px 32px;
+    transition-duration: 0.4s;
+}
+header a:hover {
+    background-color: #38a3a5ff;
+    opacity: 0.5;
+    padding: 15px 32px;
+}
+.logo {
+    margin-left: 20px;
+    height: 100px;
+}
+
+/*contenido*/
+.content {
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 60px 30px;
+}
+.cards{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+}
+.card {
+    margin-right: 60px;
+    margin-top: 60px;
+}
+.card .cardimg{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+.imgcard{
+    max-width: 100%;
+    max-height: 100%;
+}
+.cardname{
+    margin-top: 10px;
+}
+.cardposition{
+    padding:  10px 0 10px 0;
+}
+.fa-linkedin,.fa-github{
+    color: black;
+    margin-right: 5px;
+}
+img.imagemcuadrada{ width:auto;
+    height: 400px;
+}
+
+/*que hacemos*/
+.trabajosimg{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+}
+.imagemcuadradaimg{
+    width: 200px;
+    height: 200px;
+
+}
+.conocimientos{
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+/*responsive design*/
+
+@media (max-width: 480px){
+    .card img{
+        border-radius: 10px;
+    }
+}
